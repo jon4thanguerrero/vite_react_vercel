@@ -1,0 +1,112 @@
+/* ======== CONTENEDOR PRINCIPAL - OCUPA TODA LA PANTALLA ======== */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding-top: 20px; /* Evita que el contenido esté pegado arriba */
+    box-sizing: border-box;
+  }
+  
+  /* ======== SECCIÓN DE SELECCIÓN ======== */
+  .pokemon-content {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 150px; /* Evita que se colapse si no hay Pokémon */
+  }
+  
+  /* ======== LISTA DE POKÉMON ======== */
+  .pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* ======== TARJETAS DE POKÉMON ======== */
+  .pokemon-card {
+    width: 180px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .pokemon-card img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .pokemon-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-transform: capitalize;
+  }
+  
+  /* ======== BARRA HORIZONTAL Y LOGO ======== */
+  .horizontal-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding: 20px 0;
+  }
+  
+  .pokemon-logo {
+    width: 180px;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+/* ======== ESTILO PARA EL SELECT ======== */
+.pokemon-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .pokemon-selector label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .pokemon-selector select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333; /* Color de texto oscuro */
+    background-color: white; /* Fondo blanco */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .pokemon-selector select:hover {
+    border-color: #ffcc00;
+  }
+  
+  .pokemon-selector select:focus {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+  }
+  
